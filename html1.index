@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje Hobby</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background"></div>
+    <header>
+        <img src="logo.png" alt="Logo Moje Hobby" class="logo">
+        <h1>Moje Hobby</h1>
+        <p>Bez wątpienia f1 to jesden z najlepszych sportów. Łączy on pasje młodych kierowców z wielkimi korporacjami ktore wydaja pieniądze na najmniejsze technicze detale by zyskac dziesiąte sekundy. Nas inspiruje niezwykła walka na torze oraz determinacja młodych kierowców takich jak Carlos Sainz lub Max Verstapen. A to kilka najważniejszych faktów o naszym hobby</p>
+    </header>
+    <main>
+        <div class="gallery">
+            <img src="photo1.jpg" alt="Zdjęcie 1" class="responsive">
+            <img src="photo2.jpg" alt="Zdjęcie 2" class="responsive">
+        </div>
+        <div class="clickable-photo">
+            <img src="photo3.jpg" alt="Zdjęcie 3" class="responsive" id="clickable">
+            <p id="hidden-text">Carlos Sainz to jeden z najlepszych kierowców na świecie. Już sam fakt, że siedzi w bolidzie ferrari czyni go wyjątkowym. Carlos wygrał już 3 wyścigi w F1. Niesamowitym faktem jest tez to, że jego ojciec również jeździł w królowej Motorsport. Mimo sławy i dużych pieniędzy dalej jest niezwykle pozytywny i otwarty do ludzi.</p>
+        </div>
+    </main>
+    <script>
+        document.getElementById('clickable').addEventListener('click', function() {
+            document.getElementById('hidden-text').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
